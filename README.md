@@ -5,7 +5,7 @@
 
 ## Workshop overview
 
-What can EEG tell us about the effects of different anesthetic drugs? We analyze a small open-science-derived set of rat EEG-like traces labeled with wake, ketamine (low/high), and propofol (low/high) conditions. We estimate their power spectral densities (PSD), identify electrical noise, and use **FOOOF spectral parameterization** to describe 1/f-like aperiodic activity and candidate oscillatory peaks. We finish by discussing why the drug conditions and results **do not by themselves** establish consciousness, causality, or general population effects.
+What can EEG tell us about the effects of different anesthetic drugs? We analyze a small open-science-derived set of rat epidural EEG traces labeled with wake, ketamine (low/high), and propofol (low/high) conditions. We estimate their power spectral densities (PSD), identify electrical noise, and use **FOOOF spectral parameterization** to describe 1/f-like aperiodic activity and candidate oscillatory peaks.
 
 ## Prerequisites
 
@@ -16,17 +16,16 @@ What can EEG tell us about the effects of different anesthetic drugs? We analyze
 
 ## Learning objectives
 
-By the end, participants can (1) visualize an EEG-like time series, (2) calculate and explain a Welch PSD, (3) identify line-noise contamination, (4) estimate aperiodic spectral exponent and candidate oscillatory peaks with FOOOF, and (5) explain two pitfalls of drug-condition comparisons from small datasets.
+By the end, participants can (1) visualize an EEG-like time series, (2) calculate and explain a Welch PSD, (3) identify line-noise contamination, and (4) estimate aperiodic spectral exponent and candidate oscillatory peaks with FOOOF.
 
 ## 45-minute outline
 
 | Minutes | Topic |
 |---|---|
-| 0–10 | Why anesthesia and EEG? Time vs frequency |
-| 10–17 | Raw traces, Welch PSD, powerline artifact |
-| 17–30 | Spectral parameterization and model fit |
-| 30–40 | Drug comparison, alpha bandpower vs alpha peak |
-| 40–45 | Sensitivity, caveats and take-home messages |
+| 0–20 | What do we know about anesthesia and EEG? Time vs frequency |
+| 20–30 | Raw traces, Welch PSD, powerline artifact |
+| 30–40 | Spectral parameterization and model fit |
+| 40–45 | Drug comparison, alpha bandpower vs alpha peak |
 | 45–60 | Q&A |
 
 ## Start here — Google Colab (recommended)
