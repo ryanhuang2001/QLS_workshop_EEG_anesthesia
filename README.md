@@ -34,15 +34,6 @@ By the end, participants can (1) visualize an EEG-like time series, (2) calculat
 2. Download [`Exercise/data.mat`](Exercise/data.mat) from the repository beforehand. When the notebook asks for it, upload it in Colab (4.5 MB). If running locally, put the data file and the ipynb file in the same folder.
 3. Run code cells in order. The first setup cell installs the stable `fooof==1.1.1` package if missing. The outputs are generated in a `results/` directory in the notebook's working directory.
 
-**Local Jupyter alternative:** from the repository root, run:
-
-```bash
-python -m venv .venv
-# Activate the environment using the appropriate command for your OS.
-python -m pip install -r requirements.txt
-python -m jupyter lab
-```
-
 ## Citations
 
 Arena & Storm (2018), data: https://doi.org/10.25493/4SPM-V00. Donoghue et al. (2020), FOOOF: https://doi.org/10.1038/s41593-020-00744-x. Additional scientific references in last slide of PowerPoint.
