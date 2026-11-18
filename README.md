@@ -10,7 +10,7 @@ What can EEG tell us about the effects of different anesthetic drugs? We analyze
 ## Prerequisites
 
 - No previous neuroscience or signal-processing training required; basic Python helps but is not essential.
-- A laptop with a browser and internet access for **Google Colab** (recommended), or Python 3.10+ with Jupyter for local use.
+- A laptop with a browser and internet access for **Google Colab**, or Python 3.10+ with Jupyter for local use.
 - Basic familiarity with running a notebook cell is helpful. No GPU needed.
 - Dataset and code are small (~5 MB plus dependencies).
 
@@ -30,7 +30,7 @@ By the end, participants can (1) visualize an EEG-like time series, (2) calculat
 
 ## Start here — Google Colab (recommended)
 
-1. Open [`Exercises/scripts/Anesthesia_EEG_Workshop.ipynb`](Exercises/scripts/Anesthesia_EEG_Workshop.ipynb) in GitHub, then select **Open in Colab** (or upload that notebook directly to https://colab.research.google.com/).
+1. Open [`Exercise/EEG_FOOOF_Workshop.ipynb`](Exercise/EEG_FOOOF_Workshop.ipynb) in GitHub, then select **Open in Colab** (or upload that notebook directly to https://colab.research.google.com/).
 2. Download [`Exercises/data/data.mat`](Exercises/data/data.mat) from the repository beforehand. When the notebook asks for it, upload it in Colab (4.5 MB).
 3. Run code cells in order. The first setup cell installs the stable `fooof==1.1.1` package if missing. The outputs are generated in a `results/` directory in the notebook's working directory.
 4. Try the discussion questions and the extra fit-range challenge.
