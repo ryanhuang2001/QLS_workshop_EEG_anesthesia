@@ -28,12 +28,11 @@ By the end, participants can (1) visualize an EEG-like time series, (2) calculat
 | 40–45 | Drug comparison, alpha bandpower vs alpha peak |
 | 45–60 | Q&A |
 
-## Start here — Google Colab (recommended)
+## Start here
 
-1. Open [`Exercise/EEG_FOOOF_Workshop.ipynb`](Exercise/EEG_FOOOF_Workshop.ipynb) in GitHub, then select **Open in Colab** (or upload that notebook directly to https://colab.research.google.com/).
-2. Download [`Exercises/data/data.mat`](Exercises/data/data.mat) from the repository beforehand. When the notebook asks for it, upload it in Colab (4.5 MB).
+1. Open [`Exercise/EEG_FOOOF_Workshop.ipynb`](Exercise/EEG_FOOOF_Workshop.ipynb) in GitHub, then upload that notebook directly to https://colab.research.google.com.
+2. Download [`Exercise/data.mat`](Exercise/data.mat) from the repository beforehand. When the notebook asks for it, upload it in Colab (4.5 MB). If running locally, put the data file and the ipynb file in the same folder.
 3. Run code cells in order. The first setup cell installs the stable `fooof==1.1.1` package if missing. The outputs are generated in a `results/` directory in the notebook's working directory.
-4. Try the discussion questions and the extra fit-range challenge.
 
 **Local Jupyter alternative:** from the repository root, run:
 
@@ -44,40 +43,6 @@ python -m pip install -r requirements.txt
 python -m jupyter lab
 ```
 
-Open the same notebook inside `Exercises/scripts/`. The notebook searches both `Exercises/data/data.mat` and `../data/data.mat` automatically. If your Python environment cannot locate the file, copy it beside the notebook. For answers, see [`Exercises/answers/Anesthesia_EEG_Solutions.ipynb`](Exercises/answers/Anesthesia_EEG_Solutions.ipynb).
-
-## Materials / repository map
-
-```text
-README.md                         Workshop overview and setup
-requirements.txt                  Pinned core FOOOF dependency
-Slides/workshopslides.pptx        Editable revised presentation
-Slides/workshopslides.pdf         Presentation PDF
-Outline/workshopoutline.pdf       Organizer-facing workshop outline
-Exercises/data/data.mat           Small teaching subset (rights check required)
-Exercises/scripts/               Participant notebook, exercise brief + smoke test
-Exercises/answers/               Solutions notebook + sample result plots
-DATA_PROVENANCE.md                Sampling, metadata and licensing limits
-CITATIONS.md                     References and publication notes
-REVIEW_NOTES.md                  Scientific and code review details
-```
-
-## Important limitations
-
-The supplied MATLAB file holds only 10 small traces. It lacks original calibration, actual doses, animal pairing, channel descriptions, and independent confirmation of sampling rate. The notebook follows the prior instructor's **assumption** of 10,000 Hz and uses native signal units; the 50 Hz artifact makes 1–45 Hz a prudent main fit band. This is a **teaching demonstration**, not a direct replication of Colombo et al.'s human EEG study nor a test of consciousness. See [`DATA_PROVENANCE.md`](DATA_PROVENANCE.md).
-
-## Preparation before publishing
-
-- [ ] Obtain the **actual workshop feedback QR image from MiCM**; replace the placeholder on the final slide. The organizer specifically requests it.
-- [ ] Confirm that the teaching subset may legally be redistributed; see `DATA_PROVENANCE.md`.
-- [ ] Check reuse permissions for third-party figures already in the instructor's original slides; see `CITATIONS.md`.
-- [ ] Confirm the sampling rate, channel units, rat identities and actual doses against the source's recording metadata.
-- [ ] Test a clean Colab session with the notebook and the uploaded data, then fill the actual GitHub/Colab link in the shared participant materials.
-
 ## Citations
 
-Arena & Storm (2018), data: https://doi.org/10.25493/4SPM-V00. Donoghue et al. (2020), FOOOF: https://doi.org/10.1038/s41593-020-00744-x. Additional scientific references in [`CITATIONS.md`](CITATIONS.md).
-
-## Submission to QLS-MiCM
-
-Follow the [QLS-MiCM Workshop Template](https://github.com/QLS-MiCM/Workshop_Template): use its **“Use this template”** command to create a new repository, transfer these files while preserving the `Exercises`, `Slides`, and `Outline` folders, and submit an issue to the **Workshop_Template** issue tracker titled with the workshop name and date for academic review. A reviewer should approve materials before their public release under the QLS-MiCM organization.
+Arena & Storm (2018), data: https://doi.org/10.25493/4SPM-V00. Donoghue et al. (2020), FOOOF: https://doi.org/10.1038/s41593-020-00744-x. Additional scientific references in last slide of PowerPoint.
